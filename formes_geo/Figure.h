@@ -24,6 +24,10 @@ public:
 	void setY(int);
 	bool EstSelectionne();	
 	void Deselectionner();
+	virtual float CalculerPerimetre();
+	virtual float CalculerAire();
+	virtual int getRayon() const; 
+	virtual int getCote() const;
 };
 
 #endif
