@@ -17,6 +17,7 @@ public:
 	Figure();
 	Figure(int x, int y);
 	Figure(const Figure&);
+	virtual ~Figure();
 	int getX() const;
 	int getY() const;
 	void setPoint(int X, int Y);
@@ -24,10 +25,13 @@ public:
 	void setY(int);
 	bool EstSelectionne();	
 	void Deselectionner();
-	virtual float CalculerPerimetre();
-	virtual float CalculerAire();
+	virtual void selectionner(int,int)=0;
+	virtual float CalculerPerimetre()=0;
+	virtual float CalculerAire()=0;
 	virtual int getRayon() const; 
 	virtual int getCote() const;
+	virtual void setCote(int);
+	virtual void setRayon(int);
 };
 
 #endif

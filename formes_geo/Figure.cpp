@@ -21,6 +21,11 @@ Figure::Figure(const Figure& inFigure)
 	estSelectionne = inFigure.estSelectionne;
 }
 
+Figure::~Figure()
+{
+
+}
+
 int Figure::getX() const
 {
 	return x;
@@ -67,6 +72,11 @@ float Figure::CalculerAire()
 	return 0;
 }
 
+void Figure::selectionner(int x, int y)
+{
+
+}
+
 int Figure::getCote() const
 {
 	return 0;
@@ -76,3 +86,14 @@ int Figure::getRayon() const
 {
 	return 0;
 }
+
+void Figure::setCote(int inCote)
+{
+
+}
+
+void Figure::setRayon(int inCote)
+{
+
+}
+
